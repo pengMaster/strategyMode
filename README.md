@@ -1,29 +1,49 @@
-²ßÂÔÄ£Ê½
-====================
-°¸Àı:¼ÆËã³µ·Ñ
+<h1 align="center">ç­–ç•¥æ¨¡å¼</h1>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/bintray-v2.3.5-brightgreen.svg" alt="Latest Stable Version" />
+  </a>
+  <a href="">
+    <img src="https://travis-ci.org/JessYanCoding/MVPArms.svg?branch=master" alt="Build Status" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/API-14%2B-blue.svg?style=flat-square" alt="Min Sdk Version" />
+  </a>
+  <a href="">
+    <img src="http://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square" alt="License" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="">
+ Â  Â <b>å¼€å¯æ—…ç¨‹</b>
+  </a>
+</p> 
+
+æ¡ˆä¾‹:è®¡ç®—è½¦è´¹
 ---------------------
-Ë¼Â·: ÎÒÃÇÌáÈ¡Ò»¸ö¹«¹²InterfaceÀ´¼ÆËã·ÑÓÃÈı¸ö²»Í¬ÀàÊµÏÖ¼Æ·Ñ½Ó¿Ú,ÔÙÓÃÒ»¸ö¹« ¹²Àà¹ÜÀíÈıÖÖ²»Í¬³µÁ¾µÄ¼Æ·Ñ¹¦ÄÜ
+æ€è·¯: æˆ‘ä»¬æå–ä¸€ä¸ªå…¬å…±Interfaceæ¥è®¡ç®—è´¹ç”¨ä¸‰ä¸ªä¸åŒç±»å®ç°è®¡è´¹æ¥å£,å†ç”¨ä¸€ä¸ªå…¬ å…±ç±»ç®¡ç†ä¸‰ç§ä¸åŒè½¦è¾†çš„è®¡è´¹åŠŸèƒ½
 
 
-- ÈıÖÖ³µÁ¾·ÑÓÃ¹²Í¬µãÎª¼ÆËã³µ·Ñ
-- ²»Í¬µãÎª³µÁ¾ÀàĞÍ²»Í¬
-- ¹«½»³µ·Ñ
-- ³ö×â³µ·Ñ
-- Ğ¡Æû³µ·Ñ
+- ä¸‰ç§è½¦è¾†è´¹ç”¨å…±åŒç‚¹ä¸ºè®¡ç®—è½¦è´¹
+- ä¸åŒç‚¹ä¸ºè½¦è¾†ç±»å‹ä¸åŒ
+- å…¬äº¤è½¦è´¹
+- å‡ºç§Ÿè½¦è´¹
+- å°æ±½è½¦è´¹
 
 
- ### 1.¹«¹²¼Æ·Ñ½Ó¿Ú
+ ### 1.å…¬å…±è®¡è´¹æ¥å£
 
 ```java
 /**
- * ¼ÆËã¼Û¸ñ
+ * è®¡ç®—ä»·æ ¼
  *
  * @author MtmWp
  */
 public abstract interface IPrice {
 	
 	/**
-	 * ·µ»Ø¼ÆËãºóµÄ¼Û¸ñ
+	 * è¿”å›è®¡ç®—åçš„ä»·æ ¼
 	 * @param path
 	 * @return
 	 */
@@ -31,11 +51,11 @@ public abstract interface IPrice {
 	
 }
 ```
- ### 2.¹«½»³µ,³ö×â³µ,Ğ¡Æû³µ¸÷×Ô¼Æ·ÑÀà
+ ### 2.å…¬äº¤è½¦,å‡ºç§Ÿè½¦,å°æ±½è½¦å„è‡ªè®¡è´¹ç±»
  
  ```java
  /**
- * ¹«½»³µ¼ÆËã¼Û¸ñ
+ * å…¬äº¤è½¦è®¡ç®—ä»·æ ¼
  * 
  * @author MtmWp
  *
@@ -53,7 +73,7 @@ public class BusCost implements IPrice {
  
  ```java
 /**
- * ³ö×â³µ¼ÆËã¼Û¸ñ
+ * å‡ºç§Ÿè½¦è®¡ç®—ä»·æ ¼
  * 
  * @author MtmWp
  *
@@ -69,7 +89,7 @@ public class CarCost implements IPrice {
  ```
   ```java
 /**
- * Ğ¡Æû³µ¼ÆËã¼Û¸ñ
+ * å°æ±½è½¦è®¡ç®—ä»·æ ¼
  * 
  * @author MtmWp
  *
@@ -85,12 +105,12 @@ public class TaxiCost implements IPrice {
 
  ```
  
-  ### 3.Í³Ò»¹ÜÀí³µÀàĞÍ·ÑÓÃÀà
+  ### 3.ç»Ÿä¸€ç®¡ç†è½¦ç±»å‹è´¹ç”¨ç±»
   
   ```java
   
 /**
- * Í³Ò»¹ÜÀí³µÀàĞÍÒÔ¼°·ÑÓÃÀà
+ * ç»Ÿä¸€ç®¡ç†è½¦ç±»å‹ä»¥åŠè´¹ç”¨ç±»
  * 
  * @author MtmWp
  *
@@ -100,7 +120,7 @@ public class CountCostManager {
 	IPrice iPrice;
 	
 	/**
-	 * ÉèÖÃ³µÀàĞÍ
+	 * è®¾ç½®è½¦ç±»å‹
 	 * 
 	 * @param price
 	 */
@@ -109,7 +129,7 @@ public class CountCostManager {
 	}
 	
 	/**
-	 * ¼ÆËã¼Û¸ñ
+	 * è®¡ç®—ä»·æ ¼
 	 * 
 	 * @param path
 	 * @return
@@ -119,29 +139,29 @@ public class CountCostManager {
 	}
 
   ```
-## ²âÊÔÓÃÀı 
+## æµ‹è¯•ç”¨ä¾‹ 
 
   ```java
-    	//-----------------¹«½»³µ·ÑÓÃ------------------
+    	//-----------------å…¬äº¤è½¦è´¹ç”¨------------------
 		CountCostManager mCountCostManager  = new CountCostManager();
-		mCountCostManager.setCostType(new BusCost());//ÉèÖÃ³µÀàĞÍ
-		String price = mCountCostManager.countCost(12);//¸ù¾İÂ·³ÌËã¾ßÌå»¨Ïú
-		System.err.println("¹«½»³µ·ÑÓÃ:"+price+"\n");
+		mCountCostManager.setCostType(new BusCost());//è®¾ç½®è½¦ç±»å‹
+		String price = mCountCostManager.countCost(12);//æ ¹æ®è·¯ç¨‹ç®—å…·ä½“èŠ±é”€
+		System.err.println("å…¬äº¤è½¦è´¹ç”¨:"+price+"\n");
 		
-		//-----------------Ğ¡Æû³µ·ÑÓÃ------------------
-		mCountCostManager.setCostType(new CarCost());//ÉèÖÃ³µÀàĞÍ
-		System.err.println("Ğ¡Æû³µ·ÑÓÃ:"+mCountCostManager.countCost(12)+"\n");
+		//-----------------å°æ±½è½¦è´¹ç”¨------------------
+		mCountCostManager.setCostType(new CarCost());//è®¾ç½®è½¦ç±»å‹
+		System.err.println("å°æ±½è½¦è´¹ç”¨:"+mCountCostManager.countCost(12)+"\n");
 		
-		//-----------------³ö×â³µ·ÑÓÃ------------------
-		mCountCostManager.setCostType(new TaxiCost());//ÉèÖÃ³µÀàĞÍ
-		mCountCostManager.countCost(12);//¸ù¾İÂ·³ÌËã¾ßÌå»¨Ïú
-		System.err.println("³ö×â³µ·ÑÓÃ:"+mCountCostManager.countCost(12)+"\n");
+		//-----------------å‡ºç§Ÿè½¦è´¹ç”¨------------------
+		mCountCostManager.setCostType(new TaxiCost());//è®¾ç½®è½¦ç±»å‹
+		mCountCostManager.countCost(12);//æ ¹æ®è·¯ç¨‹ç®—å…·ä½“èŠ±é”€
+		System.err.println("å‡ºç§Ÿè½¦è´¹ç”¨:"+mCountCostManager.countCost(12)+"\n");
   ```
     
-### Êä³ö:
-    ¹«½»³µ·ÑÓÃ:24
+### è¾“å‡º:
+    å…¬äº¤è½¦è´¹ç”¨:24
 
-    Ğ¡Æû³µ·ÑÓÃ:29
+    å°æ±½è½¦è´¹ç”¨:29
 
-    ³ö×â³µ·ÑÓÃ:37
+    å‡ºç§Ÿè½¦è´¹ç”¨:37
 
